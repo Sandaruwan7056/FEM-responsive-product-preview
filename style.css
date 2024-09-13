@@ -76,7 +76,7 @@ body {
     padding-bottom: 0.9rem;
 }
 
-.product__price h2 {
+.product__price h1 {
     color: var(--Dark-cyan);
     font-weight: 700;
     font-family: fraunces;
