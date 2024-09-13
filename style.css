@@ -1,0 +1,150 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+:root {
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+}
+
+body {
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+
+}
+
+.card {
+    max-width: 21.5rem;
+    height: 38.125rem;
+    background-color: var(--White);
+    border-radius: 0.5rem;
+}
+
+.product__image {
+    width: 21.5rem;
+    height: 14.9375rem;
+}
+
+.mobile__img {
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.product__details {
+    padding: 1.5625rem;
+    text-align: start;
+}
+
+.product__category {
+    font-family: Montserrat;
+    letter-spacing: 0.625rem;
+    font-size: small;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    padding-bottom: 1rem;
+}
+
+.product__name {
+    font-family: fraunces;
+    font-weight: 700;
+    padding-bottom: 1.3rem;
+}
+
+.product__description {
+    font-family: montserrat;
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    padding-bottom: 1rem;
+}
+
+.product__price {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.9rem;
+}
+
+.product__price h2 {
+    color: var(--Dark-cyan);
+    font-weight: 700;
+    font-family: fraunces;
+}
+
+.product__price p {
+    padding-left: 1.2rem;
+    text-decoration: line-through;
+}
+
+button {
+    height: 3rem;
+    width: 18.3125rem;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-family: fraunces;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 300ms all ease;
+}
+
+button img {
+    padding-right: 0.5rem;
+}
+
+button:hover {
+    background-color: var(--Very-dark-blue);
+}
+
+@media(max-width: 30.85rem) {
+    .desktop__img {
+        display: none;
+    }
+}
+
+@media(min-width: 30.85rem) {
+    .card {
+        max-width: 37.5rem;
+        height: 28.125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .product__image {
+        max-width: 18.75rem;
+        height: 28.1255rem;
+    }
+
+    .mobile__img {
+        display: none;
+    }
+
+    .desktop__img {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+
+    .product__details {
+        width: 15rem;
+    }
+
+    button {
+        width: 14.75rem;
+        margin-top: 1rem;
+    }
+}
